@@ -19,7 +19,21 @@
     <![endif]-->
 </head>
 <body>
+<?php
+$arr_courses=[
+    ["1","Demo Игры", "images/demo.png","ссылка на покупк"],
+    ["2","Сокобан  ", "images/soko.png","ссылка на покупк"],
+    ["3","Теория ООП", "images/oop.png","ссылка на покупк"],
+    ["3","МикроШахматы", "images/shah.png","ссылка на покупк"],
+    ["4","Морской флот", "images/ship3.png","ссылка на покупк"],
+    ["3","Java Xonix", "images/xonix.png","ссылка на покупк"],
+    ["3","Сапер", "images/mine2.png","ссылка на покупк"],
+    ["3","ООФрукты", "images/fruits2.png","ссылка на покупк"],
+]
 
+;
+
+?>
 
 <div class="container">
     <div class="row">
@@ -57,7 +71,7 @@
                         <li><a href="#">Магазин</a></li>
 
                     </ul>
-                    <ul class="nav navbar-nav navbar-right">
+                   <!-- <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="https://www.videosharp.info/users/1/avatar/1_avatar_1.jpg" class="img-circle" style="width: 30px; height: 30px;">&nbsp;&nbsp;Игромистр <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Панель управления</a></li>
@@ -67,7 +81,7 @@
                             </ul>
 
                         </li>
-                    </ul>
+                    </ul>-->
                 </div>
             </div>
         </div>
@@ -80,87 +94,21 @@
         <h2>&nbsp;</h2>
     </div>
     <div class="row">
-        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-            <a href="#" title="Простые игры начального уровня">
-                <div class="thumbnail">
-                    <image src="images/demo.png" class="image-butt-cl">
-                        <div class="caption" style="text-align: center">
-                            <h4>Демо игры</h4>
-                        </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-            <a href="#" title="Создание игры Сокобан">
-                <div class="thumbnail">
-                    <image src="images/soko.png" class="image-butt-cl">
-                        <div class="caption" style="text-align: center">
-                            <h4>Сокобан</h4>
-                        </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-            <a href="#" title="Изучение теоретических основ ООП">
-                <div class="thumbnail">
-                    <image src="images/oop.png" class="image-butt-cl">
-                        <div class="caption" style="text-align: center">
-                            <h4>Теория ООП</h4>
-                        </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-            <a href="#" title="Создание игры в шахматы на HTML/JS">
-                <div class="thumbnail">
-                    <image src="images/shah.png" class="image-butt-cl">
-                        <div class="caption" style="text-align: center">
-                            <h4>Нано Шахматы</h4>
-                        </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-            <a href="#" title="Технологии C# и PHP">
-                <div class="thumbnail">
-                    <image src="images/ship3.png" class="image-butt-cl">
-                        <div class="caption" style="text-align: center">
-                            <h4>Морской флот</h4>
-                        </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-            <a href="#" title="Создание игры Xonix на языке Java">
-                <div class="thumbnail">
-                    <image src="images/xonix.png" class="image-butt-cl">
-                        <div class="caption" style="text-align: center">
-                            <h4>Java Xonix</h4>
-                        </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-            <a href="#" title="Создание игры Сапер">
-                <div class="thumbnail">
-                    <image src="images/mine2.png" class="image-butt-cl">
-                        <div class="caption" style="text-align: center">
-                            <h4>Сапер</h4>
-                        </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-            <a href="#" title="Изучение ООП в Java в новогодней игре">
-                <div class="thumbnail">
-                    <image src="images/fruits2.png" class="image-butt-cl">
-                        <div class="caption" style="text-align: center">
-                            <h4>ООФрукты</h4>
-                        </div>
-                </div>
-            </a>
-        </div>
 
+       <?php for($i=0; $i<count($arr_courses);$i++)
+          {
+           ?>
+        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+            <a href="#" title="Игры">
+                <div class="thumbnail">
+                    <image src="<?=$arr_courses[$i][2]?>" class="image-butt-cl">
+                        <div class="caption" style="text-align: center">
+                            <h4><?=$arr_courses[$i][1]?></h4>
+                        </div>
+                </div>
+            </a>
+        </div>
+        <?php } ?>
     </div>
 </div>
 
