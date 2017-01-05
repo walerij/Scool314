@@ -22,17 +22,36 @@
 <?php
 $arr_courses=[
     ["1","Demo Игры", "images/demo.png","ссылка на покупк"],
+    ["3","Микроигры", "images/mikrogame.jpg","ссылка на покупк"],
     ["2","Сокобан  ", "images/soko.png","ссылка на покупк"],
+    ["3","Игры со спрайтами", "images/spite.png","ссылка на покупк"],
     ["3","Теория ООП", "images/oop.png","ссылка на покупк"],
     ["3","МикроШахматы", "images/shah.png","ссылка на покупк"],
+    ["4","Морской бой", "images/morboy.png","ссылка на покупк"],
     ["4","Морской флот", "images/ship3.png","ссылка на покупк"],
     ["3","Java Xonix", "images/xonix.png","ссылка на покупк"],
     ["3","Сапер", "images/mine2.png","ссылка на покупк"],
     ["3","ООФрукты", "images/fruits2.png","ссылка на покупк"],
-]
+    ["4","Игрушки на JavaScript", "images/js.png","ссылка на покупк"],
+    ["4","Бинарная жизнь", "images/life.png","ссылка на покупк"],
+    ["4","API ВКонтакте", "images/vk.png","ссылка на покупк"],
+    ["4","Секундомер", "images/sekundomer.png","ссылка на покупк"],
+    ["4","Графоциклы", "images/grapho.png","ссылка на покупк"],
 
-;
 
+];
+
+$arr_group=[
+
+    ["1","C# Игры", "images/groop_game.png","ссылка на покупк"],
+    ["1","C# Прикладные", "images/groop_priklad.png","ссылка на покупк"],
+    ["1","Java", "images/groop_java.png","ссылка на покупк"],
+    ["1","ASP.NET", "images/groop_aspnet.png","ссылка на покупк"],
+    ["1","PHP&HTML", "images/groop_php.png","ссылка на покупк"],
+    ["1","Консольные уроки", "images/groop_console.png","ссылка на покупк"],
+    ["1","Мотивация", "images/groop_motivate.png","ссылка на покупк"],
+    ["1","Шахматные курсы", "images/shah.png","ссылка на покупк"],
+];
 ?>
 
 <div class="container">
@@ -94,7 +113,9 @@ $arr_courses=[
         <h2>&nbsp;</h2>
     </div>
     <div class="row">
-
+        <hr>
+        <h2>Популярные курсы</h2>
+        <hr>
        <?php for($i=0; $i<count($arr_courses);$i++)
           {
            ?>
@@ -109,7 +130,31 @@ $arr_courses=[
             </a>
         </div>
         <?php } ?>
+
+
     </div>
+    <div class="row">
+      <hr>
+      <h2>Группы курсов</h2>
+      <hr>
+        <?php for($i=0; $i<count($arr_group);$i++)
+        {
+            ?>
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                <a href="#" title="Группы курсов">
+                    <div class="thumbnail">
+                        <image src="<?=$arr_group[$i][2]?>" class="image-butt-cl">
+                            <div class="caption" style="text-align: center">
+                                <h4><?=$arr_group[$i][1]?></h4>
+                            </div>
+                    </div>
+                </a>
+            </div>
+        <?php } ?>
+
+    </div>
+
+
 </div>
 
 
