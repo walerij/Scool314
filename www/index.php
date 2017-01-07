@@ -37,8 +37,6 @@ $arr_courses=[
     ["4","API ВКонтакте", "images/vk.png","ссылка на покупк"],
     ["4","Секундомер", "images/sekundomer.png","ссылка на покупк"],
     ["4","Графоциклы", "images/grapho.png","ссылка на покупк"],
-
-
 ];
 
 $arr_group=[
