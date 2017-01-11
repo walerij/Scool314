@@ -10,3 +10,96 @@ and open the template in the editor.
 .image-butt-cl, .image-butt-cl img {
     width: 150px; height: 150px;
 }
+/*стили кнопок*/
+
+/**
+простая кнопка-призрак
+*/
+.ghost-button {
+    display: inline-block;
+    width: 200px;
+    padding: 8px;
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+}
+.ghost-button:hover,
+.ghost-button:active {
+    background-color: #fff;
+    color: #000;
+}
+
+/*кнопка с полупрозрачным затемнением*/
+.ghost-button-semi-transparent {
+    display: inline-block;
+    width: 200px;
+    padding: 8px;
+    color: #fff;
+    border: 2px solid #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out,
+    border-color 0.2s ease-out;
+
+}
+.ghost-button-semi-transparent a,
+.ghost-button-semi-transparent a:visited
+  { color: white;
+    text-decoration: none;}
+.ghost-button-semi-transparent:hover,
+.ghost-button-semi-transparent:active {
+    background-color: #fff; /* fallback */
+    background-color: rgba(255, 255, 255, 0.4);
+    border-color: #fff; /* fallback */
+    border-color: rgba(255, 255, 255, 0.4);
+    transition: background-color 0.3s ease-in,
+    border-color 0.3s ease-in;
+    color: white;
+    text-decoration: none;
+}
+
+/*кнопка с выделением цветом*/
+
+.ghost-button-full-color {
+    display: inline-block;
+    width: 200px;
+    padding: 8px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    transition: color 0.3s ease-out,
+    background-color 0.3s ease-out,
+    border-color 0.3s ease-out;
+}
+.ghost-button-full-color:hover,
+.ghost-button-full-color:active {
+    background-color: #9363c4;
+    border-color: #9363c4;
+    color: #fff;
+    transition: color 0.3s ease-in,
+    background-color 0.3s ease-in,
+    border-color 0.3s ease-in;
+}
+
+/*конец стилей кнопок*/
+.nav-course {
+    height: 350px; width:100%;padding-top: 10px; padding-left: 40px;
+}
+
+.course-links {text-align: center; padding-left: 25%;}
+
+.course-links li{
+    float: left;
+    display: block;
+    margin-left: 20px;
+}
+.nav-course h1 {text-align: center; margin: 40px;}
+.top-color{
+    color: white;
+}

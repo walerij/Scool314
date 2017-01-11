@@ -19,7 +19,7 @@
     <![endif]-->
 </head>
 <body>
- <div class="container">
+ <!--<div class="container">
     <div class="row">
         <div class="navbar navbar-default navbar-fixed-top">
             <div class="container">
@@ -65,12 +65,56 @@
                              </ul>
 
                          </li>
-                     </ul>-->
+                     </ul>
                 </div>
             </div>
         </div>
     </div>
+ </div>-->
+ <div class="container">
+     <div class="row"> <!-- верхушка--->
+         <div class="navbar navbar-default navbar-fixed-top nav-course" style="background-image: url('/images/top_courses/morflot3.jpg');">
+             <div class="row top-color">
+               <h4> <img src="images/fmap.png" style="width: 40px; height: 40px;" alt="fmzp">Формула программиста</h4>
+                <h1>Морской флот</h1>
+             </div>
+             <div class="row course-links">
+                 <ul>
+                     <li>
+                         <a class="ghost-button-semi-transparent" href="http://videosharp.info/" target="_blank">Приобрести</a>
+                     </li>
+                     <li>
+                         <a class="ghost-button-semi-transparent" href="http://videosharp.info/" target="_blank">Акции</a>
+                     </li>
+                     <li>
+                         <a class="ghost-button-semi-transparent" href="http://videosharp.info/" target="_blank">О проекте</a>
+                     </li>
+                 </ul>
+
+
+
+
+             </div>
+         </div>
+
+     </div>
+
+
  </div>
+<div class="container" style="height:370px;">
+
+
+</div>
+<div class="container">
+    <pre><h2>
+Серия из 50 далеко не коротких уроков по созданию
+многопользовательской "Морской Флот".
+Будет серверная часть на PHP с Базой данных MySQL.
+также будут использованы анимированные спрайты
+для оформления клиентской части программы.
+        </h2>  </pre>
+</div>
+
 
 
 </body>
